@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΕΠ-Ε#0</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000000, #000011, #000033, #000066, #0000CC);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        .neon-text {
+            font-size: 45px;
+            color: #00ffea; /* Neon text color */
+            text-transform: uppercase;
+            text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00ffea;
+            margin: 10% auto;
+            transition: 0.5s;
+        }
+
+        .neon-text:hover {
+            text-shadow: none;
+			color: #194000; /* Neon text color */
+            filter: blur(10px); /* Blur the whole site */
+        }
+		.n:hover { 
+			display: none;
+		}
+        .hidden-text {
+            display: none;
+        }
+		.hidden-text:hover {
+            display: none;
+        }
+
+        .n:hover + .hidden-text {
+            display: block; /* Show hidden text on hover */
+			font-size: 45px;
+            color: #000000; /* Neon text color */
+            text-transform: uppercase;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+            margin: 10% auto;
+            transition: 0.5s;
+        }
+		.hidden-text:hover + .n{
+            display: block; /* Show hidden text on hover */
+			
+        }
+    </style>
+</head>
+<body>
+    <div class="neon-text">Εισαγωγή στον Προγραμματισμό</div>
+    <div class="neon-text">Εργασία #0</div>
+    <div class="neon-text n">sdi2300098</div>
+	<div class="hidden-text">Κωβαίος Στυλιανός</div>
+</body>
+</html>
